@@ -35,16 +35,28 @@ body > .main-content{
 
 /* SIDEBAR LAYOUT */
 
+.sidebar{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 4fr;
+    gap: 16px;
+    padding-left: 16px;
+}
+
 .sidebar .dashboard-wrapper{
+
+
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
-    padding-left: 10px;
-    padding-top: 10px;
 }
 
 .sidebar .dashboard-icon{
     width: 3rem;
+}
+
+.sidebar .siderbar-main{
+
 }
 
 .sidebar li{
@@ -53,4 +65,8 @@ body > .main-content{
 
 .sidebar img {
     width: 2rem;
+}
+
+.sidebar .sidebar-secondary{
+
 }
