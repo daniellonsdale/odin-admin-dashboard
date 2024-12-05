@@ -4,9 +4,19 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     height: 100vh;
+
     font-size: 12px;
+    font-family: 'robotoregular', 'Arial', sans-serif;
 
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -44,8 +54,6 @@ body > .main-content{
 }
 
 .sidebar .dashboard-wrapper{
-
-
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
@@ -55,18 +63,16 @@ body > .main-content{
     width: 3rem;
 }
 
-.sidebar .siderbar-main{
-
+.sidebar ul{
+    font-size: 1rem;
 }
 
 .sidebar li{
     list-style-type: none;
+    padding-bottom: 8px;
 }
 
 .sidebar img {
     width: 2rem;
-}
-
-.sidebar .sidebar-secondary{
-
+    padding-right: 8px;
 }
