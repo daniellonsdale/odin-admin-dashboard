@@ -23,6 +23,26 @@ body{
     grid-template-rows: 1fr 4fr;
 }
 
+/* GENERAL USE CLASSES */
+
+.user-icon-small{
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-icon-large{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.small-icon{
+    width: 2rem;
+}
+
 /* MAIN GRID LAYOUT */
 
 body > .header-container{
@@ -86,6 +106,8 @@ body > .main-content{
 }
 
 .sidebar img {
-    width: 2rem;
     padding-right: 8px;
 }
+
+/* HEADER LAYOUT */
+
