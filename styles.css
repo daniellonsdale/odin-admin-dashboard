@@ -183,3 +183,6 @@ body > .main-content{
 .header-bottom .button-share{
     grid-area: button-share;
 }
+
+/* REMOVE ALL CURRENT HEADER GRID LAYOUT AND REFORMAT AS SINGLE GRID
+TO FIX LAYOUT ISSUES */
