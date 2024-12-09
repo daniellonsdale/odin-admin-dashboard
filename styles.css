@@ -121,8 +121,11 @@ body > .main-content{
     align-items: center;
     gap: 8px;
 
-    padding-right: 20px;
     padding-top: 8px;
+}
+
+.header-top .search-icon{
+    justify-self: end;
 }
 
 .header-top #search-box{
@@ -131,10 +134,7 @@ body > .main-content{
     height: 2rem;
     border: none;
     background-color: rgba(169, 169, 169, 0.578);
-}
-
-.header-top .search-icon{
-    justify-self: end;
+    justify-self: start;
 }
 
 .header-top .notif-icon{
@@ -146,7 +146,13 @@ body > .main-content{
 }
 
 .header-top .user-name-small{
-    justify-self: start;
     font-weight: 600;
     font-size: 16px;
+}
+
+/* HEADER LAYOUT -- BOTTOM */
+
+.header-bottom{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
 }
