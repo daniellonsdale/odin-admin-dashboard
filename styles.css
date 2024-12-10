@@ -178,10 +178,6 @@ body > .main-content{
     font-weight: 600;
 }
 
-.header-bottom .hi-there{
-
-}
-
 .header-bottom .user-name-tag{
     font-size: 1.2rem;
 }
@@ -191,6 +187,3 @@ body > .main-content{
     height: 2rem;
     border-radius: 1rem;
 }
-
-/* REMOVE ALL CURRENT HEADER GRID LAYOUT AND REFORMAT AS SINGLE GRID
-TO FIX LAYOUT ISSUES */
