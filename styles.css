@@ -115,19 +115,6 @@ body > .main-content{
 
 /* HEADER LAYOUT -- TOP */
 
-.header-top{
-    display: grid;
-    grid-template-areas: ". . search-icon search-box search-box search-box search-box search-box search-box search-box search-box search-box search-box notif-icon user-icon-1 user-name-small user-name-small";
-    align-items: center;
-    gap: 8px;
-
-    padding-top: 8px;
-}
-
-.header-top .search-icon{
-    grid-area: search-icon;
-}
-
 .header-top #search-box{
     width: 40vw;
     border-radius: 1rem;
@@ -135,53 +122,17 @@ body > .main-content{
     border: none;
     background-color: rgba(169, 169, 169, 0.578);
 
-    grid-area: search-box;
-}
-
-.header-top .notif-icon{
-    grid-area: notif-icon;
-}
-
-.header-top .user-icon-1{
-    grid-area: user-icon-1;
 }
 
 .header-top .user-name-small{
     font-weight: 600;
     font-size: 16px;
-
-    grid-area: user-name-small;
 }
 
 /* HEADER LAYOUT -- BOTTOM */
 
-.header-bottom{
-    display: grid;
-    grid-template-areas: ". . user-icon-1 hello-message-container hello-message-container hello-message-container hello-message-container hello-message-container hello-message-container hello-message-container hello-message-container button-new button-new button-upload button-upload button-share button-share";
-}
-
-.header-bottom .user-icon-1{
-    grid-area: user-icon-1;
-}
-
-.header-bottom .hello-message-container{
-    grid-area: hello-message-container;
-}
-
 .header-bottom button{
     width: 5vw;
-}
-
-.header-bottom .button-new{
-    grid-area: button-new;
-}
-
-.header-bottom .button-upload{
-    grid-area: button-upload;
-}
-
-.header-bottom .button-share{
-    grid-area: button-share;
 }
 
 /* REMOVE ALL CURRENT HEADER GRID LAYOUT AND REFORMAT AS SINGLE GRID
