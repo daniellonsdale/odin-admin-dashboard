@@ -117,8 +117,11 @@ body > .main-content{
 
 .header-container{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 3fr;
     grid-template-columns: repeat(20, 1fr);
+
+    padding-bottom: 16px;
+    padding-top: 8px;
 }
 
 /* HEADER LAYOUT -- TOP */
@@ -127,12 +130,12 @@ body > .main-content{
     grid-column: 2 / -2;
 
     display: grid;
-    grid-template-columns: 1fr 17fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 15fr 1fr 1fr 4fr;
     align-items: center;
 }
 
 .header-top #search-box{
-    width: 50vw;
+    width: 40vw;
     border-radius: 1rem;
     height: 2rem;
     border: none;
@@ -140,7 +143,8 @@ body > .main-content{
 }
 
 .header-top .notif-icon{
-    justify-self: center;
+    justify-self: end;
+    margin-right: 16px;
 }
 
 .header-top .user-icon-1{
@@ -148,7 +152,8 @@ body > .main-content{
 }
 
 .header-top .user-name-small{
-    justify-self: center;
+    justify-self: start;
+    margin-left: 16px;
 
     font-weight: 600;
     font-size: 16px;
@@ -164,13 +169,27 @@ body > .main-content{
     align-items: center;
 }
 
-.header-bottom .user-icon-1{
+.header-bottom .hello-message-container{
+    padding-left: 16px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    font-weight: 600;
+}
+
+.header-bottom .hi-there{
 
 }
 
+.header-bottom .user-name-tag{
+    font-size: 1.2rem;
+}
 
 .header-bottom button{
-    width: 5vw;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 1rem;
 }
 
 /* REMOVE ALL CURRENT HEADER GRID LAYOUT AND REFORMAT AS SINGLE GRID
