@@ -196,3 +196,15 @@ body > .main-content{
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+
+.main-content .main-content-header{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* YOUR PROJECTS LAYOUT */
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+}
