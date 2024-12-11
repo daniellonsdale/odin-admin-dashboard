@@ -217,7 +217,18 @@ body > .main-content{
 }
 
 .project-container .project-card{
+    display: flex;
+    flex-direction: column;
+
     background-color: beige;
     border-radius: .3rem;
     border-left: solid rgb(121, 255, 103) 8px;
+    padding: 8px;
+}
+
+.project-card .project-card-icon-container{
+    margin-top: auto;
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
 }
