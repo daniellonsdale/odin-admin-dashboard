@@ -201,7 +201,7 @@ body > .main-content{
 }
 
 .main-content .main-content-header{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -219,11 +219,17 @@ body > .main-content{
 .project-container .project-card{
     display: flex;
     flex-direction: column;
+    gap: 4px;
 
     background-color: beige;
     border-radius: .3rem;
     border-left: solid rgb(121, 255, 103) 8px;
     padding: 8px;
+}
+
+.project-card .project-card-header{
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .project-card .project-card-icon-container{
