@@ -205,6 +205,10 @@ body > .main-content{
     font-weight: 600;
 }
 
+.main-content .main-sidebar{
+    height: 70vh;
+}
+
 /* YOUR PROJECTS LAYOUT */
 
 .project-container{
@@ -214,7 +218,7 @@ body > .main-content{
     gap: 16px;
 
     margin-top: 8px;
-    height: 75vh;
+    height: 70vh;
 }
 
 .project-container .project-card{
@@ -231,10 +235,6 @@ body > .main-content{
 .project-card .project-card-header{
     font-size: 1.2rem;
     font-weight: 600;
-}
-
-.project-card .project-card-content{
-    /* margin-bottom: 24px; */
 }
 
 .project-card .project-card-icon-container{
@@ -257,4 +257,19 @@ body > .main-content{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/* TRENDING LAYOUT */
+
+.trending .trending-container{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px;
+    height: 100%;
+}
+
+.trending-container .trending-user{
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
