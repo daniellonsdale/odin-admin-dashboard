@@ -238,3 +238,18 @@ body > .main-content{
     display: flex;
     gap: 8px;
 }
+
+/* ANNOUNCEMENTS LAYOUT */
+
+.announcements .announcements-container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vh);
+}
+
+.announcement-card .announcement-card-content{
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
