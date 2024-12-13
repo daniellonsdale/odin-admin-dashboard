@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-size: inherit;
+    font-weight: inherit;
 }
 
 @font-face {
@@ -14,7 +15,7 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
 
     font-size: 12px;
     font-family: 'robotoregular', 'Arial', sans-serif;
@@ -92,6 +93,7 @@ body > .main-content{
 .sidebar .dashboard-text{
     padding-top: 2px;
     font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .sidebar ul{
@@ -229,7 +231,7 @@ body > .main-content{
     background-color: beige;
     border-radius: .3rem;
     border-left: solid rgb(121, 255, 103) 8px;
-    padding: 8px;
+    padding: 16px;
 }
 
 .project-card .project-card-header{
@@ -248,7 +250,20 @@ body > .main-content{
 
 .announcements .announcements-container{
     display: grid;
-    grid-template-rows: repeat(3, 10vh);
+    grid-template-rows: repeat(3, 12vh);
+    align-items: center;
+
+    background-color: beige;
+    border-radius: .3rem;
+    padding: 6px 16px;
+
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.announcements .announcement-card-top-border{
+    border-top: 1px rgba(0, 0, 0, 0.5) solid;
+    padding-top: 8px;
 }
 
 .announcement-card .announcement-card-content{
@@ -259,13 +274,25 @@ body > .main-content{
     text-overflow: ellipsis;
 }
 
+.announcement-card .announcement-card-header{
+    font-weight: 600;
+}
+
 /* TRENDING LAYOUT */
+
+.trending .trending-header{
+    margin-bottom: 8px;
+}
 
 .trending .trending-container{
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 16px;
     height: 100%;
+
+    background-color: beige;
+    border-radius: .3rem;
+    padding: 8px;
 }
 
 .trending-container .trending-user{
