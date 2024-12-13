@@ -23,15 +23,19 @@
     font-style: normal;
 }
 
-body{
-    min-height: 100vh;
+body,
+html{
+    height: 100%;
 
     font-size: 12px;
     font-family: 'robotoregular', 'Arial', sans-serif;
+}
 
+.main-grid-wrapper{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr minmax(0, auto);
+    min-height: 100vh;
 }
 
 /* GENERAL USE CLASSES */
@@ -66,24 +70,25 @@ body{
 
 /* MAIN GRID LAYOUT */
 
-body > .header-container{
+.main-grid-wrapper > .header-container{
     grid-column: 2 / -1;
     grid-row: 1 / 2;
     background-color: var(--secondary-color);
     box-shadow: var(--box-shadow);
 }
 
-body > .sidebar{
+.main-grid-wrapper > .sidebar{
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     background-color: var(--accent-color-one);
     min-width: 160px;
+    height: 100%;
 }
-
-body > .main-content{
+.main-grid-wrapper > .main-content{
     grid-column: 2 / -1;
     grid-row: 2 / -1;
     background-color: var(--primary-color);
+    height: 100%;
 }
 
 /* SIDEBAR LAYOUT */

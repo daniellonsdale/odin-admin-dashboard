@@ -7,168 +7,170 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <header class="header-container">
-        <div class="header-top">
-            <img src="images/search.svg" alt="search icon" class="search-icon very-small-icon">
-            <input type="search" name="q" id="search-box">
-            <img src="images/notif.svg" alt="notification icon" class="notif-icon very-small-icon">
-            <img src="images/user-icon-1.jpg" alt="user icon image" class="user-icon-1 user-icon user-icon-small">
-            <div class="user-name-small">Morgan Oakly</div>
+    <div class="main-grid-wrapper">
+        <header class="header-container">
+            <div class="header-top">
+                <img src="images/search.svg" alt="search icon" class="search-icon very-small-icon">
+                <input type="search" name="q" id="search-box">
+                <img src="images/notif.svg" alt="notification icon" class="notif-icon very-small-icon">
+                <img src="images/user-icon-1.jpg" alt="user icon image" class="user-icon-1 user-icon user-icon-small">
+                <div class="user-name-small">Morgan Oakly</div>
+            </div>
+            <div class="header-bottom">
+                <img src="images/user-icon-1.jpg" alt="user icon image" class="user-icon-1 user-icon user-icon-large">
+                <div class="hello-message-container">
+                    <span class="hi-there">Hi there,</span>
+                    <span class="user-name-tag">Morgan Oakley (@morgan)</span>
+                </div>
+                <button type="button" class="button-new">New</button>
+                <button type="button" class="button-upload">Upload</button>
+                <button type="button" class="button-share">Share</button>
+            </div>
+        </header>
+        <div class="sidebar">
+            <div class="dashboard-wrapper"><img src="images/dashboard.svg" alt="dashboard icon" class="dashboard-icon"><h1 class="dashboard-text">Dashboard</h1></div>
+            <ul class="sidebar-main">
+                <li class="sidebar-home"><img src="images/home.svg" alt="home icon" class="small-icon">Home</li>
+                <li class="sidebar-profile"><img src="images/profile.svg" alt="profile icon" class="small-icon">Profile</li>
+                <li class="sidebar-messages"><img src="images/messages.svg" alt="messages icon" class="small-icon">Messages</li>
+                <li class="sidebar-history"><img src="images/history.svg" alt="history icon" class="small-icon">History</li>
+                <li class="sidebar-tasks"><img src="images/tasks.svg" alt="tasks icon" class="small-icon">Tasks</li>
+                <li class="sidebar-communities"><img src="images/communities.svg" alt="communities icon" class="small-icon">Communities</li>
+            </ul>
+            <ul class="sidebar-secondary">
+                <li class="sidebar-settings"><img src="images/settings.svg" alt="settings icon" class="small-icon">Settings</li>
+                <li class="sidebar-support"><img src="images/support.svg" alt="support icon" class="small-icon">Support</li>
+                <li class="sidebar-privacy"><img src="images/privacy.svg" alt="privacy icon" class="small-icon">Privacy</li>
+            </ul>
         </div>
-        <div class="header-bottom">
-            <img src="images/user-icon-1.jpg" alt="user icon image" class="user-icon-1 user-icon user-icon-large">
-            <div class="hello-message-container">
-                <span class="hi-there">Hi there,</span>
-                <span class="user-name-tag">Morgan Oakley (@morgan)</span>
-            </div>
-            <button type="button" class="button-new">New</button>
-            <button type="button" class="button-upload">Upload</button>
-            <button type="button" class="button-share">Share</button>
-        </div>
-    </header>
-    <div class="sidebar">
-        <div class="dashboard-wrapper"><img src="images/dashboard.svg" alt="dashboard icon" class="dashboard-icon"><h1 class="dashboard-text">Dashboard</h1></div>
-        <ul class="sidebar-main">
-            <li class="sidebar-home"><img src="images/home.svg" alt="home icon" class="small-icon">Home</li>
-            <li class="sidebar-profile"><img src="images/profile.svg" alt="profile icon" class="small-icon">Profile</li>
-            <li class="sidebar-messages"><img src="images/messages.svg" alt="messages icon" class="small-icon">Messages</li>
-            <li class="sidebar-history"><img src="images/history.svg" alt="history icon" class="small-icon">History</li>
-            <li class="sidebar-tasks"><img src="images/tasks.svg" alt="tasks icon" class="small-icon">Tasks</li>
-            <li class="sidebar-communities"><img src="images/communities.svg" alt="communities icon" class="small-icon">Communities</li>
-        </ul>
-        <ul class="sidebar-secondary">
-            <li class="sidebar-settings"><img src="images/settings.svg" alt="settings icon" class="small-icon">Settings</li>
-            <li class="sidebar-support"><img src="images/support.svg" alt="support icon" class="small-icon">Support</li>
-            <li class="sidebar-privacy"><img src="images/privacy.svg" alt="privacy icon" class="small-icon">Privacy</li>
-        </ul>
-    </div>
-    <div class="main-content">
-        <div class="your-projects">
-            <div class="main-content-header project-header">
-                Your Projects
-            </div>
-            <div class="project-container">
-                <div class="project-card">
-                    <div class="project-card-header">
-                        Super Cool Project
-                    </div>
-                    <div class="project-card-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo, erat at ultrices posuere, tortor enim rhoncus justo, vel vehicula augue sem quis augue.
-                    </div>
-                    <div class="project-card-icon-container"><img src="images/star.svg" alt="star icon" class="very-small-icon"><img src="images/eye.svg" alt="eye icon" class="very-small-icon"><img src="images/fork.svg" alt="fork icon" class="very-small-icon"></div>
+        <div class="main-content">
+            <div class="your-projects">
+                <div class="main-content-header project-header">
+                    Your Projects
                 </div>
-                <div class="project-card">
-                    <div class="project-card-header">
-                        Less Cool Project
-                    </div>
-                    <div class="project-card-content">
-                        Curabitur consectetur lectus magna, vehicula rhoncus justo rutrum ut. Aliquam placerat quam lorem, id consectetur nisi dignissim at. Ut eu iaculis sapien, nec ultricies lorem. Nulla interdum condimentum felis ut bibendum. Nam maximus elit sit amet lobortis cursus. Aenean ultricies tellus quis sem commodo, at pharetra mauris dapibus.
-                    </div>
-                    <div class="project-card-icon-container"><img src="images/star.svg" alt="star icon" class="very-small-icon"><img src="images/eye.svg" alt="eye icon" class="very-small-icon"><img src="images/fork.svg" alt="fork icon" class="very-small-icon"></div>
-                </div>
-                <div class="project-card">
-                    <div class="project-card-header">
-                        Impossible App
-                    </div>
-                    <div class="project-card-content">
-                        In pellentesque magna eget nisi sagittis consectetur. Integer a ex laoreet, dignissim ante vitae, volutpat velit. Praesent in feugiat massa, eu feugiat leo. Etiam tristique ipsum quis fringilla mattis.
-                    </div>
-                    <div class="project-card-icon-container"><img src="images/star.svg" alt="star icon" class="very-small-icon"><img src="images/eye.svg" alt="eye icon" class="very-small-icon"><img src="images/fork.svg" alt="fork icon" class="very-small-icon"></div>
-                </div>
-                <div class="project-card">
-                    <div class="project-card-header">
-                        Easy Peasy App
-                    </div>
-                    <div class="project-card-content">
-                        Maecenas eu bibendum purus, a porta arcu. Nullam sit amet nunc pulvinar, convallis ex nec, rutrum lectus.
-                    </div>
-                    <div class="project-card-icon-container"><img src="images/star.svg" alt="star icon" class="very-small-icon"><img src="images/eye.svg" alt="eye icon" class="very-small-icon"><img src="images/fork.svg" alt="fork icon" class="very-small-icon"></div>
-                </div>
-                <div class="project-card">
-                    <div class="project-card-header">
-                        Ad Blocker
-                    </div>
-                    <div class="project-card-content">
-                        Praesent quis urna tincidunt, fringilla tortor ac, lobortis mi. Duis non maximus risus. Vestibulum ut consequat justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In non libero et neque fermentum sodales. Quisque feugiat, justo at accumsan bibendum, eros urna faucibus lorem, ultrices ultricies dui ipsum id nulla.
-                    </div>
-                    <div class="project-card-icon-container"><img src="images/star.svg" alt="star icon" class="very-small-icon"><img src="images/eye.svg" alt="eye icon" class="very-small-icon"><img src="images/fork.svg" alt="fork icon" class="very-small-icon"></div>
-                </div>
-                <div class="project-card">
-                    <div class="project-card-header">
-                        Money Maker
-                    </div>
-                    <div class="project-card-content">
-                        Duis vestibulum justo nec est blandit, in consectetur risus tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut pulvinar purus quis augue pellentesque pulvinar.
-                    </div>
-                    <div class="project-card-icon-container"><img src="images/star.svg" alt="star icon" class="very-small-icon"><img src="images/eye.svg" alt="eye icon" class="very-small-icon"><img src="images/fork.svg" alt="fork icon" class="very-small-icon"></div>
-                </div>
-            </div>
-        </div>
-        <div class="main-sidebar">
-            <div class="announcements">
-                <div class="main-content-header announcements-header">
-                    Announcements
-                </div>
-                <div class="announcements-container">
-                    <div class="announcement-card">
-                        <h3 class="announcement-card-header">
-                            Site Maintenance
-                        </h3>
-                        <div class="announcement-card-content">
-                            Praesent non tempus sem. Duis imperdiet, elit sed sodales egestas, nisl ante rutrum orci, non cursus nisl augue ac orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <div class="project-container">
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            Super Cool Project
                         </div>
-                    </div>
-                    <div class="announcement-card announcement-card-top-border">
-                        <h3 class="announcement-card-header">
-                            Community Share Day
-                        </h3>
-                        <div class="announcement-card-content">
-                            Aliquam in leo et diam ornare aliquam. Nulla rhoncus mi sit amet nulla dictum placerat. Suspendisse mollis, leo maximus tempus egestas, magna neque scelerisque velit, sed efficitur dolor velit eleifend mauris. Mauris quis massa sit amet libero efficitur mollis. Ut sodales mauris augue, nec lobortis felis sollicitudin vitae. Sed sodales quis ligula vitae dignissim. Donec ipsum augue, dictum eget laoreet sed, suscipit non tellus.
+                        <div class="project-card-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo, erat at ultrices posuere, tortor enim rhoncus justo, vel vehicula augue sem quis augue.
                         </div>
+                        <div class="project-card-icon-container"><img src="images/star.svg" alt="star icon" class="very-small-icon"><img src="images/eye.svg" alt="eye icon" class="very-small-icon"><img src="images/fork.svg" alt="fork icon" class="very-small-icon"></div>
                     </div>
-                    <div class="announcement-card announcement-card-top-border">
-                        <h3 class="announcement-card-header">
-                            Updated Privacy Policy
-                        </h3>
-                        <div class="announcement-card-content">
-                            Aenean pretium pellentesque maximus. Duis dapibus volutpat risus, ut faucibus purus. Curabitur lacinia libero id vestibulum elementum. Duis egestas posuere ullamcorper. Vestibulum mattis risus vel tellus vulputate consequat. Mauris maximus dui vitae risus posuere blandit. Etiam vulputate imperdiet turpis.
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            Less Cool Project
                         </div>
+                        <div class="project-card-content">
+                            Curabitur consectetur lectus magna, vehicula rhoncus justo rutrum ut. Aliquam placerat quam lorem, id consectetur nisi dignissim at. Ut eu iaculis sapien, nec ultricies lorem. Nulla interdum condimentum felis ut bibendum. Nam maximus elit sit amet lobortis cursus. Aenean ultricies tellus quis sem commodo, at pharetra mauris dapibus.
+                        </div>
+                        <div class="project-card-icon-container"><img src="images/star.svg" alt="star icon" class="very-small-icon"><img src="images/eye.svg" alt="eye icon" class="very-small-icon"><img src="images/fork.svg" alt="fork icon" class="very-small-icon"></div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            Impossible App
+                        </div>
+                        <div class="project-card-content">
+                            In pellentesque magna eget nisi sagittis consectetur. Integer a ex laoreet, dignissim ante vitae, volutpat velit. Praesent in feugiat massa, eu feugiat leo. Etiam tristique ipsum quis fringilla mattis.
+                        </div>
+                        <div class="project-card-icon-container"><img src="images/star.svg" alt="star icon" class="very-small-icon"><img src="images/eye.svg" alt="eye icon" class="very-small-icon"><img src="images/fork.svg" alt="fork icon" class="very-small-icon"></div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            Easy Peasy App
+                        </div>
+                        <div class="project-card-content">
+                            Maecenas eu bibendum purus, a porta arcu. Nullam sit amet nunc pulvinar, convallis ex nec, rutrum lectus.
+                        </div>
+                        <div class="project-card-icon-container"><img src="images/star.svg" alt="star icon" class="very-small-icon"><img src="images/eye.svg" alt="eye icon" class="very-small-icon"><img src="images/fork.svg" alt="fork icon" class="very-small-icon"></div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            Ad Blocker
+                        </div>
+                        <div class="project-card-content">
+                            Praesent quis urna tincidunt, fringilla tortor ac, lobortis mi. Duis non maximus risus. Vestibulum ut consequat justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In non libero et neque fermentum sodales. Quisque feugiat, justo at accumsan bibendum, eros urna faucibus lorem, ultrices ultricies dui ipsum id nulla.
+                        </div>
+                        <div class="project-card-icon-container"><img src="images/star.svg" alt="star icon" class="very-small-icon"><img src="images/eye.svg" alt="eye icon" class="very-small-icon"><img src="images/fork.svg" alt="fork icon" class="very-small-icon"></div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            Money Maker
+                        </div>
+                        <div class="project-card-content">
+                            Duis vestibulum justo nec est blandit, in consectetur risus tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut pulvinar purus quis augue pellentesque pulvinar.
+                        </div>
+                        <div class="project-card-icon-container"><img src="images/star.svg" alt="star icon" class="very-small-icon"><img src="images/eye.svg" alt="eye icon" class="very-small-icon"><img src="images/fork.svg" alt="fork icon" class="very-small-icon"></div>
                     </div>
                 </div>
             </div>
-            <div class="trending">
-                <div class="main-content-header trending-header">
-                    Trending
+            <div class="main-sidebar">
+                <div class="announcements">
+                    <div class="main-content-header announcements-header">
+                        Announcements
+                    </div>
+                    <div class="announcements-container">
+                        <div class="announcement-card">
+                            <h3 class="announcement-card-header">
+                                Site Maintenance
+                            </h3>
+                            <div class="announcement-card-content">
+                                Praesent non tempus sem. Duis imperdiet, elit sed sodales egestas, nisl ante rutrum orci, non cursus nisl augue ac orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </div>
+                        </div>
+                        <div class="announcement-card announcement-card-top-border">
+                            <h3 class="announcement-card-header">
+                                Community Share Day
+                            </h3>
+                            <div class="announcement-card-content">
+                                Aliquam in leo et diam ornare aliquam. Nulla rhoncus mi sit amet nulla dictum placerat. Suspendisse mollis, leo maximus tempus egestas, magna neque scelerisque velit, sed efficitur dolor velit eleifend mauris. Mauris quis massa sit amet libero efficitur mollis. Ut sodales mauris augue, nec lobortis felis sollicitudin vitae. Sed sodales quis ligula vitae dignissim. Donec ipsum augue, dictum eget laoreet sed, suscipit non tellus.
+                            </div>
+                        </div>
+                        <div class="announcement-card announcement-card-top-border">
+                            <h3 class="announcement-card-header">
+                                Updated Privacy Policy
+                            </h3>
+                            <div class="announcement-card-content">
+                                Aenean pretium pellentesque maximus. Duis dapibus volutpat risus, ut faucibus purus. Curabitur lacinia libero id vestibulum elementum. Duis egestas posuere ullamcorper. Vestibulum mattis risus vel tellus vulputate consequat. Mauris maximus dui vitae risus posuere blandit. Etiam vulputate imperdiet turpis.
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="trending-container">
-                    <div class="trending-user">
-                        <img src="images/user-icon-1.jpg" alt="user icon image" class="user-icon-1 user-icon user-icon-small">
-                        <div class="user-tag-title">
-                            <p>@morgan</p>
-                            <p>Super Cool Project</p>
-                        </div>
+                <div class="trending">
+                    <div class="main-content-header trending-header">
+                        Trending
                     </div>
-                    <div class="trending-user">
-                        <img src="images/user-icon-2.jpg" alt="user icon image" class="user-icon-2 user-icon user-icon-small">
-                        <div class="user-tag-title">
-                            <p>@tegan</p>
-                            <p>World Peace Builder</p>
+                    <div class="trending-container">
+                        <div class="trending-user">
+                            <img src="images/user-icon-1.jpg" alt="user icon image" class="user-icon-1 user-icon user-icon-small">
+                            <div class="user-tag-title">
+                                <p>@morgan</p>
+                                <p>Super Cool Project</p>
+                            </div>
                         </div>
+                        <div class="trending-user">
+                            <img src="images/user-icon-2.jpg" alt="user icon image" class="user-icon-2 user-icon user-icon-small">
+                            <div class="user-tag-title">
+                                <p>@tegan</p>
+                                <p>World Peace Builder</p>
+                            </div>
+                        </div>
+                        <div class="trending-user">
+                            <img src="images/user-icon-3.jpg" alt="user icon image" class="user-icon-3 user-icon user-icon-small">
+                            <div class="user-tag-title">
+                                <p>@kendall</p>
+                                <p>Life Changing App</p>
+                            </div>
+                        </div>
+                        <!-- <div class="trending-user">
+                            <img src="images/user-icon-4.jpg" alt="user icon image" class="user-icon-4 user-icon user-icon-small">
+                            <div class="user-tag-title">
+                                <p>@alex</p>
+                                <p>No Traffic Maker</p>
+                            </div>
+                        </div> -->
                     </div>
-                    <div class="trending-user">
-                        <img src="images/user-icon-3.jpg" alt="user icon image" class="user-icon-3 user-icon user-icon-small">
-                        <div class="user-tag-title">
-                            <p>@kendall</p>
-                            <p>Life Changing App</p>
-                        </div>
-                    </div>
-                    <!-- <div class="trending-user">
-                        <img src="images/user-icon-4.jpg" alt="user icon image" class="user-icon-4 user-icon user-icon-small">
-                        <div class="user-tag-title">
-                            <p>@alex</p>
-                            <p>No Traffic Maker</p>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
