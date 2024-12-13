@@ -6,6 +6,15 @@
     font-weight: inherit;
 }
 
+:root{
+    --primary-color: rgba(157, 192, 139, 0.766);
+    --secondary-color: rgb(237, 241, 214);
+    --accent-color-one: rgba(96, 153, 102, 0.823);
+    --accent-color-two: rgb(64, 81, 59);
+
+    --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+}
+
 @font-face {
     font-family: 'robotoregular';
     src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
@@ -32,6 +41,8 @@ body{
     height: 3rem;
     object-fit: cover;
     border-radius: 50%;
+
+    cursor: pointer;
 }
 
 .user-icon-large{
@@ -39,14 +50,18 @@ body{
     height: 4rem;
     object-fit: cover;
     border-radius: 50%;
+
+    cursor: pointer;
 }
 
 .small-icon{
     width: 2rem;
+    cursor: pointer;
 }
 
 .very-small-icon{
     width: 1.5rem;
+    cursor: pointer;
 }
 
 /* MAIN GRID LAYOUT */
@@ -54,19 +69,21 @@ body{
 body > .header-container{
     grid-column: 2 / -1;
     grid-row: 1 / 2;
-    background-color: aqua;
+    background-color: var(--secondary-color);
+    box-shadow: var(--box-shadow);
 }
 
 body > .sidebar{
     grid-column: 1 / 2;
     grid-row: 1 / -1;
-    background-color: aquamarine;
+    background-color: var(--accent-color-one);
+    min-width: 160px;
 }
 
 body > .main-content{
     grid-column: 2 / -1;
     grid-row: 2 / -1;
-    background-color: coral;
+    background-color: var(--primary-color);
 }
 
 /* SIDEBAR LAYOUT */
@@ -88,12 +105,14 @@ body > .main-content{
 
 .sidebar .dashboard-icon{
     width: 3rem;
+    cursor: pointer;
 }
 
 .sidebar .dashboard-text{
     padding-top: 2px;
     font-size: 1.5rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .sidebar ul{
@@ -111,6 +130,12 @@ body > .main-content{
     grid-template-columns: min-content min-content;
     gap: 12px;
     align-items: center;
+
+    cursor: pointer;
+}
+
+.sidebar li:hover{
+   color: rgba(0, 0, 0, 0.401);
 }
 
 .sidebar img {
@@ -143,7 +168,7 @@ body > .main-content{
     border-radius: 1rem;
     height: 2rem;
     border: none;
-    background-color: rgba(169, 169, 169, 0.578);
+    background-color: var(--primary-color);
 }
 
 .header-top .notif-icon{
@@ -169,7 +194,7 @@ body > .main-content{
     grid-column: 2 / -2;
 
     display: grid;
-    grid-template-columns: 1fr 12fr 3fr 3fr 3fr;
+    grid-template-columns: 1fr 12fr 3fr 3fr 4fr;
     align-items: center;
 }
 
@@ -187,9 +212,19 @@ body > .main-content{
 }
 
 .header-bottom button{
-    width: 5rem;
+    width: 6rem;
     height: 2rem;
     border-radius: 1rem;
+
+    border: 1px var(--accent-color-one) solid;
+    color: black;
+    background-color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.header-bottom button:hover{
+    background-color: var(--accent-color-one);
+    cursor: pointer;
 }
 
 /* MAIN CONTENT LAYOUT */
@@ -228,10 +263,12 @@ body > .main-content{
     flex-direction: column;
     gap: 4px;
 
-    background-color: beige;
+    background-color: var(--secondary-color);
     border-radius: .3rem;
-    border-left: solid rgb(121, 255, 103) 8px;
+    border-left: solid var(--accent-color-two) 8px;
     padding: 16px;
+
+    box-shadow: var(--box-shadow);
 }
 
 .project-card .project-card-header{
@@ -253,12 +290,14 @@ body > .main-content{
     grid-template-rows: repeat(3, 12vh);
     align-items: center;
 
-    background-color: beige;
+    background-color: var(--secondary-color);
     border-radius: .3rem;
     padding: 6px 16px;
 
     margin-bottom: 8px;
     margin-top: 8px;
+
+    box-shadow: var(--box-shadow);
 }
 
 .announcements .announcement-card-top-border{
@@ -290,9 +329,11 @@ body > .main-content{
     gap: 16px;
     height: 100%;
 
-    background-color: beige;
+    background-color: var(--secondary-color);
     border-radius: .3rem;
     padding: 8px;
+
+    box-shadow: var(--box-shadow);
 }
 
 .trending-container .trending-user{
@@ -301,4 +342,8 @@ body > .main-content{
     gap: 8px;
 }
 
-/* NEED TO FIX PECUILIARITIES */
+/* TO FIX:
+
+SIDEBAR AND MAIN CONTENT NOT EXPANDING BACKGROUND DOWN WHEN PAGE SHRINKS 
+
+*/
