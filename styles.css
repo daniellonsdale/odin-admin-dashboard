@@ -97,13 +97,12 @@ html{
 .sidebar{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 4fr;
-    gap: 16px;
+    grid-template-rows: 1fr 3fr 6fr;
 }
 
 .sidebar .dashboard-wrapper{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
     align-items: start;
     padding-top: 8px;
     padding-left: 8px;
@@ -154,6 +153,7 @@ html{
     display: grid;
     grid-template-rows: 2fr 3fr;
     grid-template-columns: repeat(20, 1fr);
+    gap: 8px;
 
     padding-bottom: 16px;
     padding-top: 8px;
@@ -218,9 +218,9 @@ html{
 }
 
 .header-bottom button{
-    width: 6rem;
-    height: 2rem;
-    border-radius: 1rem;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 1.5rem;
 
     border: 1px var(--accent-color-one) solid;
     color: black;
