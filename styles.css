@@ -35,7 +35,7 @@ html{
 .main-grid-wrapper{
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: min-content;
+    grid-template-rows: max-content;
     min-height: 100%;
 }
 
@@ -261,7 +261,6 @@ html{
     gap: 16px;
 
     margin-top: 8px;
-    height: 70vh;
 }
 
 .project-container .project-card{
